@@ -1,0 +1,8 @@
+__pycache__
+lightning_logs
+maskcyclegan/__pycache__
+melgan/__pycache__
+models/*
+!models/.gitkeep
+datasets/*
+!datasets/.gitkeep
