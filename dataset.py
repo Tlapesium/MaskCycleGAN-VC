@@ -8,7 +8,6 @@ import tqdm
 from pytorch_lightning import LightningDataModule
 
 import melgan.modules
-from pysndfx import AudioEffectsChain
 
 def readwavfile(path):
     data,_ = librosa.load(path,sr=hparams.sr)
@@ -36,13 +35,6 @@ def read_wavs(path_x, path_y):
 class MelDataset(Dataset):
     def __init__(self, path_x, path_y):
         tmp_x, tmp_y = read_wavs(path_x, path_y)
-        # lowpass = AudioEffectsChain().highshelf(gain = -100, frequency= 250, slope=0.99).lowpass(frequency=450)
-        # for i in range(len(tmp_x)):
-        #     # tmp_x[i] = np.pad(tmp_x[i], (hparams.sr*2, hparams.sr*2), 'constant', constant_values=np.min(tmp_x[i]))
-        #     tmp_x[i] += lowpass((np.random.rand(tmp_x[i].shape[0]) - 0.5)*0.02)
-        # for i in range(len(tmp_y)):
-        #     # tmp_y[i] = np.pad(tmp_y[i], (hparams.sr*2, hparams.sr*2), 'constant', constant_values=np.min(tmp_y[i]))
-        #     tmp_y[i] += lowpass((np.random.rand(tmp_y[i].shape[0]) - 0.5)*0.02)
         self.data_x, self.data_y = [], []
         self.wav2mel = melgan.modules.Wav2Mel()
 

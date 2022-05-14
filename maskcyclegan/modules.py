@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 from torch.nn.modules.activation import GLU
 import hparams
-from torchinfo import summary
 
 
 class GLU(nn.Module):
