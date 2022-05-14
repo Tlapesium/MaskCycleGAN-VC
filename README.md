@@ -35,3 +35,6 @@ $ python train.py --dataset_x datasets/VoiceMe --dataset_y datasets/VoiceKugimiy
 ```
 $ python test.py --model_path models/mask_cyclegan_vc.ckpt --wav_path your_voice.wav --output_path converted_your_voice.wav --x2y
 ```
+
+# Copyright Notice
+`melgan/modules.py` and `melgan/model.py` is cited from [descriptinc/melgan-neurips](https://github.com/descriptinc/melgan-neurips)
