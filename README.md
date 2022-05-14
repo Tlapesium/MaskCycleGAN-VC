@@ -5,6 +5,7 @@ Unofficial implement of [MaskCycleGAN-VC](http://www.kecl.ntt.co.jp/people/kanek
 # Usage
 
 1. Collect your dataset and put your dataset into `datasets` directory.
+
 example
 ```
 datasets
@@ -17,11 +18,13 @@ datasets
 ```
 
 2. install requirements
+
 ```
 $ pip install -r requirements.txt
 ```
 
 3. Training your model
+
 Your model is saved into `models` directory.
 
 ```
