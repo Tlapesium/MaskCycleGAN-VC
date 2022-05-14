@@ -37,4 +37,4 @@ $ python test.py --model_path models/mask_cyclegan_vc.ckpt --wav_path your_voice
 ```
 
 # Copyright Notice
-`melgan/modules.py` and `melgan/model.py` is cited from [descriptinc/melgan-neurips](https://github.com/descriptinc/melgan-neurips)
+`melgan/modules.py` and `melgan/model.pt` is cited from [descriptinc/melgan-neurips](https://github.com/descriptinc/melgan-neurips)
